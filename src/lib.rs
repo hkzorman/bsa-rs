@@ -20,6 +20,7 @@
 mod cc;
 mod containers;
 mod derive;
+mod directxtex_dummy;
 pub mod fo4;
 mod guess;
 mod hashing;
