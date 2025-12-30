@@ -15,7 +15,7 @@ use core::{
     ptr::NonNull,
     result, slice,
 };
-use directxtex::{
+use crate::directxtex_dummy::{
     ScratchImage, TexMetadata, CP_FLAGS, DDS_FLAGS, DXGI_FORMAT, FORMAT_TYPE, TEX_DIMENSION,
     TEX_MISC_FLAG,
 };
