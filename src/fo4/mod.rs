@@ -71,7 +71,6 @@ pub use self::{
 };
 
 use core::num::TryFromIntError;
-use directxtex::HResultError;
 use std::io;
 
 #[non_exhaustive]
@@ -85,9 +84,6 @@ pub enum Error {
 
     #[error("buffer failed to decompress to the expected size... expected {expected} bytes, but got {actual} bytes")]
     DecompressionSizeMismatch { expected: usize, actual: usize },
-
-    #[error("error while working with a dds file")]
-    DX10(#[from] HResultError),
 
     #[error("attempted to write in a format that does not match a file/chunk")]
     FormatMismatch,
