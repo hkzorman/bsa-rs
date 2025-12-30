@@ -7,6 +7,10 @@ use crate::{
     },
     io::Source,
     CompressionResult, Sealed,
+    directxtex_dummy::{
+        ScratchImage, TexMetadata, CP_FLAGS, DDS_FLAGS, DXGI_FORMAT, FORMAT_TYPE, TEX_DIMENSION,
+        TEX_MISC_FLAG,
+    }
 };
 use core::{
     fmt::{self, Debug, Display, Formatter},
@@ -14,10 +18,6 @@ use core::{
     ops::{Index, IndexMut, Range, RangeBounds},
     ptr::NonNull,
     result, slice,
-};
-use crate::directxtex_dummy::{
-    ScratchImage, TexMetadata, CP_FLAGS, DDS_FLAGS, DXGI_FORMAT, FORMAT_TYPE, TEX_DIMENSION,
-    TEX_MISC_FLAG,
 };
 use std::{error, io::Write};
 
